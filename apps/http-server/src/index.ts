@@ -12,8 +12,10 @@ app.post("/signin", (req, res) => {
 });
 
 app.get("/chat", (req, res) => {
-    res.send("Hii there");
+    res.send("Hii there Welcome to Chat!");
 });
 
 
-app.listen(3001);
+app.listen(3004, ()=>{
+    console.log("server is listing on port 3004");
+});
